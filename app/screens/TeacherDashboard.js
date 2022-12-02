@@ -19,29 +19,27 @@ function StudentDashboard({navigation}) {
   return (
     <View style={styles.mainContainer}>
       <View style={styles.section1}>
-
         <Text style={{ fontSize: 20, textAlign: "center" ,margin: 10}}>
           Student Details
         </Text>
         <Text style={{ fontSize: 18,margin:10 }}>
-          Name : Akansh Suresh Bende
+          Name : Vipul Pawar
         </Text>
         <Text style={{ fontSize: 18,margin:10 }}>
-          Enrollment ID : BE20F05F003
+          Enrollment ID : VipulP
         </Text>
-        <Text style={{ fontSize: 18,margin:10 }}>
-          Semester : V 
-        </Text>
+      
         <Text style={{ fontSize: 18,margin:10 }}>
           Mobile No : 9874563210
         </Text>
-
+        <Text style={{ fontSize: 18,margin:20 }}>
+          
+         Coming Soon....
+        </Text>
       </View>
-      <Text style={{ fontSize: 20, textAlign: "center" }}>
-        Give Attendence :
-      </Text>
+      
       <View style={styles.section2}>
-        <TouchableOpacity style={styles.scan} onPress={() => navigation.navigate("QRScan")}>
+        <TouchableOpacity style={styles.scan} onPress={() => navigation.navigate("Test")}>
           <Text
             style={{
               fontSize: 20,
@@ -49,7 +47,7 @@ function StudentDashboard({navigation}) {
               alignItems: "center",
             }}
           >
-            Scan QR
+          Take Attendence
           </Text>
         </TouchableOpacity>
       </View>

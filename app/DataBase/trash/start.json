@@ -1,0 +1,30 @@
+[
+  {
+    "sid": "BE20F05F003",
+    "pass": "Akansh@123",
+    "funame": "Akansh Bende",
+    "semester": "V",
+    "MobNo": "987654321"
+  },
+  {
+    "sid": "BE20F05F005",
+    "pass": "Shriram@123",
+    "funame": "Shriram Bhople",
+    "semester": "V",
+    "MobNo": "987654321"
+  },
+  {
+    "sid": "BE20F05F003",
+    "pass": "Bhagyashri@123",
+    "funame": "Bhagyashri Vaidya",
+    "semester": "V",
+    "MobNo": "987654321"
+  },
+  {
+    "sid": "BE20F05F003",
+    "pass": "Aishwarya@123",
+    "funame": "Aishwarya Satpute",
+    "semester": "V",
+    "MobNo": "987654321"
+  }
+]

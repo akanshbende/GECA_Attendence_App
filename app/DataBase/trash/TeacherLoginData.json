@@ -1,0 +1,43 @@
+[
+  {
+    "tid": "VrishaliC",
+    "pass": "Vrishali@123",
+    "funame": "Vrishali Chakkarwar",
+    "courses": [
+      {
+        "cid": "CS2005",
+        "cname": "Data Structures"
+      },
+      {
+        "cid": "CS3001",
+        "cname": "Data Mining and Warehousing"
+      },
+      {
+        "cid": "CS4007",
+        "cname": "Big Data"
+      }
+    ],
+    "MobNo": "987654321"
+  },
+  {
+    "tid": "VipulP",
+    "pass": "Vipul@123",
+    "funame": "Vipul Pawar",
+    "course": [
+      {
+        "cid": "CS2010",
+        "cname": "Operating System"
+      },
+      {
+        "cid": "CS3020",
+        "cname": "Machine Learning"
+      },
+      {
+        "cid": "CS4015",
+        "cname": "Artificial Intelligence"
+      }
+    ],
+
+    "MobNo": "987654321"
+  }
+]

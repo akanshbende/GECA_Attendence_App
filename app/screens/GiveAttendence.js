@@ -1,4 +1,5 @@
-import React from "react";
+import * as React from "react";
+import { useState } from "react";
 import {
   Button,
   View,
@@ -9,39 +10,14 @@ import {
   Alert,
 } from "react-native";
 
-//======================================JSON data fetching================================
-{/* <script type="text/javascript" src="start.json"></script>
-var mydata = JSON.parse(start); */}
-
-//======================================================================================
-
-function StudentDashboard({navigation}) {
+function GiveAttendence() {
   return (
     <View style={styles.mainContainer}>
-      <View style={styles.section1}>
-
-        <Text style={{ fontSize: 20, textAlign: "center" ,margin: 10}}>
-          Student Details
-        </Text>
-        <Text style={{ fontSize: 18,margin:10 }}>
-          Name : Akansh Suresh Bende
-        </Text>
-        <Text style={{ fontSize: 18,margin:10 }}>
-          Enrollment ID : BE20F05F003
-        </Text>
-        <Text style={{ fontSize: 18,margin:10 }}>
-          Semester : V 
-        </Text>
-        <Text style={{ fontSize: 18,margin:10 }}>
-          Mobile No : 9874563210
-        </Text>
-
-      </View>
-      <Text style={{ fontSize: 20, textAlign: "center" }}>
-        Give Attendence :
-      </Text>
       <View style={styles.section2}>
-        <TouchableOpacity style={styles.scan} onPress={() => navigation.navigate("QRScan")}>
+        <TouchableOpacity
+          style={styles.scan}
+          // onPress={() => navigation.navigate("Test")}
+        >
           <Text
             style={{
               fontSize: 20,
@@ -49,7 +25,7 @@ function StudentDashboard({navigation}) {
               alignItems: "center",
             }}
           >
-            Scan QR
+            Give Attendence
           </Text>
         </TouchableOpacity>
       </View>
@@ -57,7 +33,6 @@ function StudentDashboard({navigation}) {
   );
 }
 
-//f2f2f2
 const styles = StyleSheet.create({
   mainContainer: {
     height: "100%",
@@ -86,16 +61,16 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
 
-  scan: {
-    width: "100%",
-    height: "100%",
-    borderRadius: 20,
-    borderColor: "#555c6f",
-    borderWidth: 3,
-    backgroundColor: "skyblue",
-    justifyContent: "center",
-    alignItems: "center",
-  },
+  // scan: {
+  //   width: "100%",
+  //   height: "100%",
+  //   borderRadius: 20,
+  //   borderColor: "#555c6f",
+  //   borderWidth: 3,
+  //   backgroundColor: "skyblue",
+  //   justifyContent: "center",
+  //   alignItems: "center",
+  // },
 
   // mainHeader: {
   //   fontSize: 25,
@@ -146,4 +121,4 @@ const styles = StyleSheet.create({
   // multilineStyle: {},
 });
 
-export default StudentDashboard;
+export default GiveAttendence;
