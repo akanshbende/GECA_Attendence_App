@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Text, View, StyleSheet, Button } from "react-native";
+import { Text, View, StyleSheet, Button, Linking } from "react-native";
 import { BarCodeScanner } from "expo-barcode-scanner";
 
 export default function QRCodeScanner({ navigation }) {
@@ -22,28 +22,32 @@ export default function QRCodeScanner({ navigation }) {
   // What happens when we scan the bar code
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
-    setText(data);
+    console.log(
+      `QR Code With Type ${type} and data ${Linking.openURL(
+        `${data}`
+      )} has been Scanned`
+    );
     //====================================================================
-    onSuccess = (e) => {
-      const check = e.data.substring(0, 4);
-      console.log("scanned data" + check);
-      this.setState({
-        result: e,
-        scan: false,
-        ScanResult: true,
-      });
-      if (check === "http") {
-        Linking.openURL(e.data).catch((err) =>
-          console.error("An error occured", err)
-        );
-      } else {
-        this.setState({
-          result: e,
-          scan: false,
-          ScanResult: true,
-        });
-      }
-    };
+    // onSuccess = (e) => {
+    //   const check = e.data.substring(0, 4);
+    //   console.log("scanned data" + check);
+    //   this.setState({
+    //     result: e,
+    //     scan: false,
+    //     ScanResult: true,
+    //   });
+    //   if (check === "http") {
+    //     Linking.openURL(e.data).catch((err) =>
+    //       console.error("An error occured", err)
+    //     );
+    //   } else {
+    //     this.setState({
+    //       result: e,
+    //       scan: false,
+    //       ScanResult: true,
+    //     });
+    //   }
+    // };
 
     //====================================================================
     // navigation.navigate("GiveAttendence");

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "404132353266",
+    "project_id": "qrcodeattendence-54147",
+    "storage_bucket": "qrcodeattendence-54147.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404132353266:android:daefcdfaf8d3e9ca7c2c6b",
+        "android_client_info": {
+          "package_name": "com.myproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404132353266-l4ddlj0bfv051upflv8e1ma9opae7o1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUx34OyStEsYou-9Et2eAkQ5Jdzes77Pw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404132353266-l4ddlj0bfv051upflv8e1ma9opae7o1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
