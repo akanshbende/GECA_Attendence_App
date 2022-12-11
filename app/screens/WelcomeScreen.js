@@ -23,10 +23,14 @@ function WelcomeScreen({ navigation }) {
       source={require("../assets/background.png")}
     >
       <View>
-        <TouchableOpacity style={styles.buttonStyle} onPress={() => {navigation.navigate("User");
-      // setSession("selected")
-    }}>
-          <Text style={styles.next}>Next </Text>
+        <TouchableOpacity
+          style={styles.buttonStyle}
+          onPress={() => {
+            navigation.navigate("User");
+            // setSession("selected")
+          }}
+        >
+          <Text style={styles.next}>Next</Text>
         </TouchableOpacity>
       </View>
     </ImageBackground>
