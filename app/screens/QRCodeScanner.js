@@ -22,11 +22,15 @@ export default function QRCodeScanner({ navigation }) {
   // What happens when we scan the bar code
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
+
+    //============================SCANNING AND REDIRECTIOG TO URL======================================
     console.log(
-      `QR Code With Type ${type} and data ${Linking.openURL(
-        `${data}`
-      )} has been Scanned`
+      // `QR Code With Type ${type} and data ${Linking.openURL(
+      //   `${data}`
+      // )} has been Scanned`
+      navigation.navigate("Network Login")
     );
+    //=================================================================================================
     //====================================================================
     // onSuccess = (e) => {
     //   const check = e.data.substring(0, 4);

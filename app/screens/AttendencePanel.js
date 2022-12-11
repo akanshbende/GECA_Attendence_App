@@ -25,17 +25,16 @@ function StudentLogin({ navigation }) {
 
       <View style={styles.inputContainer}>
         <Text style={styles.labels}>Big Data :</Text>
-        <TouchableOpacity style={styles.buttonStyle} onPress={()=>OnPortal()}>
+        <TouchableOpacity style={styles.buttonStyle} onPress={() => OnPortal()}>
           <Text style={styles.login}>OFF</Text>
         </TouchableOpacity>
       </View>
 
       <View style={styles.inputContainer}>
         <Text style={styles.labels}>Data Mining :</Text>
-        <TouchableOpacity style={styles.buttonStyle} onPress={()=>OnPortal()}>
+        <TouchableOpacity style={styles.buttonStyle} onPress={() => OnPortal()}>
           <Text style={styles.login}>OFF</Text>
         </TouchableOpacity>
-       
       </View>
     </View>
   );
@@ -64,7 +63,7 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     marginTop: 20,
-    display:"flex",
+    display: "flex",
   },
   labels: {
     fontSize: 18,

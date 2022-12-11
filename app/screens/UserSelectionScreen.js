@@ -3,10 +3,12 @@ import { Button, View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
 import TeacherLogin from "./TeacherLogin";
 import StudentLogin from "./StudentLogin";
-import {useAppContext} from '../../Context/sessionHolder'
 
+// import {useAppContext} from '../../Context/sessionHolder'
 
 // const Stack = createNativeStackNavigator();
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 function UserSelectionScreen({ navigation }) {
   // const [session, setSession] = useAppContext()
@@ -73,9 +75,8 @@ const styles = StyleSheet.create({
   },
   buttonBar: {
     alignItems: "center",
-marginTop:40,
-    width:"100%",
-   
+    marginTop: 40,
+    width: "100%",
   },
   // multilineStyle: {},
 });
