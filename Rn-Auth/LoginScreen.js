@@ -36,7 +36,7 @@ function LoginScreen({ navigation }) {
           onChangeText={(text) => setPassword(text)}
           secureTextEntry
         />
-        <Button title="Login" />
+        <Button title="Login" style={styles.login} />
 
         {/* <View style={{ flexDirection: "row", marginTop: 20 }}>
           <Text>Dont't have a account? </Text>
@@ -77,6 +77,9 @@ const styles = StyleSheet.create({
   },
   link: {
     color: "blue",
+  },
+  login: {
+    backgroundColor: "00ff55",
   },
 });
 export default LoginScreen;
