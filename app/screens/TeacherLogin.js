@@ -20,7 +20,7 @@ function TeacherLogin({ navigation }) {
   const submit = () => {
     // return Alert.alert(userName,password);
     if (userName === "pawarsir" && password === "pass@123") {
-      const name = `Vipul Pawar`;
+      const name = `Vikul Pawar`;
       Alert.alert(`Thank You!!  ${name}`);
       navigation.navigate("Teacher Dashboard");
     } else {

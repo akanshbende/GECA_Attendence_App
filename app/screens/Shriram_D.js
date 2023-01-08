@@ -17,24 +17,31 @@ var mydata = JSON.parse(start); */
 
 //======================================================================================
 
-function StudentDashboard({ navigation }) {
+function Shriram_D({ navigation }) {
   return (
     <View style={styles.mainContainer}>
       <View style={styles.section1}>
         <Text style={{ fontSize: 20, textAlign: "center", margin: 10 }}>
-          Teacher's Detail
+          Student Details
         </Text>
-        <Text style={{ fontSize: 18, margin: 10 }}>Name : Vipul Pawar</Text>
-        <Text style={{ fontSize: 18, margin: 10 }}>Enrollment ID : VipulP</Text>
-
-        <Text style={{ fontSize: 18, margin: 10 }}>Mobile No : 9874563210</Text>
-        <Text style={{ fontSize: 18, margin: 20 }}>Coming Soon....</Text>
+        <Text style={{ fontSize: 15, margin: 8 }}>
+          Name : Akansh Suresh Bende
+        </Text>
+        <Text style={{ fontSize: 15, margin: 8 }}>
+          Enrollment ID : BE20F05F003
+        </Text>
+        <Text style={{ fontSize: 15, margin: 8 }}>Semester : V</Text>
+        <Text style={{ fontSize: 15, margin: 8 }}>Mobile No : 9874563210</Text>
+        <Text style={{ fontSize: 15, margin: 8 }}>Total Lectures : 8 </Text>
+        <Text style={{ fontSize: 15, margin: 8 }}>Attendence :</Text>
       </View>
-
+      <Text style={{ fontSize: 20, textAlign: "center" }}>
+        Give Attendence :
+      </Text>
       <View style={styles.section2}>
         <TouchableOpacity
           style={styles.scan}
-          onPress={() => navigation.navigate("Test")}
+          onPress={() => navigation.navigate("QRScan")}
         >
           <Text
             style={{
@@ -43,7 +50,7 @@ function StudentDashboard({ navigation }) {
               alignItems: "center",
             }}
           >
-            Take Attendence
+            Scan QR
           </Text>
         </TouchableOpacity>
       </View>
@@ -140,4 +147,4 @@ const styles = StyleSheet.create({
   // multilineStyle: {},
 });
 
-export default StudentDashboard;
+export default Shriram_D;

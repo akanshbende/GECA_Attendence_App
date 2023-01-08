@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useContext } from "react";
+import { useState } from "react";
 import {
   Button,
   TextInput,
@@ -7,22 +7,23 @@ import {
   StyleSheet,
   TouchableOpacity,
   Text,
-  Image,
-  ImageBackground,
 } from "react-native";
 
-import { AuthContext } from "../Rn-Auth/Context/AuthContext";
-
-function LoginScreen({ navigation }) {
+function RegisterScreen({ navigation }) {
+  const [name, setName] = useState(null);
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
-  const val = useContext(AuthContext);
+  // const val = useContext(AuthContext);
 
   return (
     <View style={styles.container}>
       <View style={styles.wrapper}>
-        {/* <Text>{val}</Text> */}
-        <Image style={styles.logo} source={require("./gecalogo.png")} />
+        <TextInput
+          placeholder="Enter Name"
+          style={styles.input}
+          value={name}
+          onChangeText={(text) => setEmail(text)}
+        />
         <TextInput
           placeholder="Enter email"
           style={styles.input}
@@ -36,14 +37,14 @@ function LoginScreen({ navigation }) {
           onChangeText={(text) => setPassword(text)}
           secureTextEntry
         />
-        <Button title="Login" style={styles.login} />
+        <Button title="Register" />
 
-        {/* <View style={{ flexDirection: "row", marginTop: 20 }}>
-          <Text>Dont't have a account? </Text>
-          <TouchableOpacity onPress={() => navigation.navigate("Register")}>
-            <Text style={styles.link}>Register</Text>
+        <View style={{ flexDirection: "row", marginTop: 20 }}>
+          <Text>Already have a account? </Text>
+          <TouchableOpacity onPress={() => navigation.navigate("Login")}>
+            <Text style={styles.link}>Login</Text>
           </TouchableOpacity>
-        </View> */}
+        </View>
       </View>
     </View>
   );
@@ -56,17 +57,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   wrapper: {
-    height: "60%",
     width: "80%",
-    borderColor: "#bbb",
-    borderRadius: 5,
-    paddingHorizontal: 5,
-  },
-  logo: {
-    alignSelf: "center",
-    margin: 10,
-    width: 150,
-    height: 150,
   },
   input: {
     marginBottom: 12,
@@ -78,8 +69,5 @@ const styles = StyleSheet.create({
   link: {
     color: "blue",
   },
-  login: {
-    backgroundColor: "00ff55",
-  },
 });
-export default LoginScreen;
+export default RegisterScreen;

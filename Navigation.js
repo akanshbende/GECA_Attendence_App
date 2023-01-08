@@ -18,11 +18,12 @@ import QRcodeScan from "./Other Files/QRcodeScan";
 import AttendencePanel_test from "./app/screens/AttendencePanel_test";
 import GiveAttendence from "./app/screens/GiveAttendence";
 import Scan from "./Other Files/Scan";
-import HomeScreen from "./Rn-Auth/HomeScreen";
-import LoginScreen from "./Rn-Auth/LoginScreen";
-import RegisterScreen from "./Rn-Auth/RegisterScreen";
+import HomeScreen from "./app/Rn-Auth/HomeScreen";
+import LoginScreen from "./app/Rn-Auth/LoginScreen";
+import RegisterScreen from "./app/Rn-Auth/RegisterScreen";
 
-import { AuthProvider } from "./Rn-Auth/Context/AuthContext";
+import { AuthProvider } from "./app/Rn-Auth/Context/AuthContext";
+import Result from "./app/screens/Result";
 
 const Stack = createNativeStackNavigator();
 export default function Navigation() {
@@ -41,6 +42,11 @@ export default function Navigation() {
           options={{ headerShown: false }}
         />
 
+        <Stack.Screen
+          name="Done"
+          component={Result}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen name="Test" component={AttendencePanel_test} />
         <Stack.Screen name="GiveAttendence" component={GiveAttendence} />
         {/* <Stack.Screen name="Scan" component={Scan} /> */}

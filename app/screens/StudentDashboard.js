@@ -10,38 +10,39 @@ import {
 } from "react-native";
 
 //======================================JSON data fetching================================
-{/* <script type="text/javascript" src="start.json"></script>
-var mydata = JSON.parse(start); */}
+{
+  /* <script type="text/javascript" src="start.json"></script>
+var mydata = JSON.parse(start); */
+}
 
 //======================================================================================
 
-function StudentDashboard({navigation}) {
+function StudentDashboard({ navigation }) {
   return (
     <View style={styles.mainContainer}>
       <View style={styles.section1}>
-
-        <Text style={{ fontSize: 20, textAlign: "center" ,margin: 10}}>
+        <Text style={{ fontSize: 20, textAlign: "center", margin: 10 }}>
           Student Details
         </Text>
-        <Text style={{ fontSize: 18,margin:10 }}>
+        <Text style={{ fontSize: 15, margin: 8 }}>
           Name : Akansh Suresh Bende
         </Text>
-        <Text style={{ fontSize: 18,margin:10 }}>
+        <Text style={{ fontSize: 15, margin: 8 }}>
           Enrollment ID : BE20F05F003
         </Text>
-        <Text style={{ fontSize: 18,margin:10 }}>
-          Semester : V 
-        </Text>
-        <Text style={{ fontSize: 18,margin:10 }}>
-          Mobile No : 9874563210
-        </Text>
-
+        <Text style={{ fontSize: 15, margin: 8 }}>Semester : V</Text>
+        <Text style={{ fontSize: 15, margin: 8 }}>Mobile No : 9874563210</Text>
+        <Text style={{ fontSize: 15, margin: 8 }}>Total Lectures : 8 </Text>
+        <Text style={{ fontSize: 15, margin: 8 }}>Attendence :</Text>
       </View>
       <Text style={{ fontSize: 20, textAlign: "center" }}>
         Give Attendence :
       </Text>
       <View style={styles.section2}>
-        <TouchableOpacity style={styles.scan} onPress={() => navigation.navigate("QRScan")}>
+        <TouchableOpacity
+          style={styles.scan}
+          onPress={() => navigation.navigate("QRScan")}
+        >
           <Text
             style={{
               fontSize: 20,
